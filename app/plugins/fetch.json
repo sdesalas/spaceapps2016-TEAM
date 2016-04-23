@@ -1,0 +1,44 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-magnetometer": {
+        "source": {
+            "type": "local",
+            "path": "..\\cordova-plugin-magnetometer"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-tonegenerator": {
+        "source": {
+            "type": "local",
+            "path": "..\\cordova-plugin-tonegenerator"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-vibration": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-vibration",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "fr.drangies.cordova.serial": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/xseignard/cordovarduino",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

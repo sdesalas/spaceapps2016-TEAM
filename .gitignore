@@ -31,3 +31,10 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+app/platforms/android/.idea/
+app/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin
+app/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock
+app/platforms/android/.gradle/
+app/platforms/android/CordovaLib/build/
+app/platforms/android/assets/www/_backup/
+app/www/_backup/

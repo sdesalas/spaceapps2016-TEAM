@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.nasa.zurkon.spacehack2016" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Magnetometer">
+        <param name="android-package" value="org.apache.cordova.magnetometer.Magnetometer" />
+    </feature>
+    <feature name="ToneGenerator">
+        <param name="android-package" value="org.apache.cordova.tonegenerator.ToneGenerator" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="Serial">
+        <param name="android-package" value="fr.drangies.cordova.serial.Serial" />
+    </feature>
+    <preference name="Fullscreen" value="true" />
+    <allow-intent href="market:*" />
+    <name>TEAMS</name>
+    <description>
+        Technical Emergency Ambient Monitoring System
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Team Zurkon
+    </author>
+    <preference name="Orientation" value="landscape" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

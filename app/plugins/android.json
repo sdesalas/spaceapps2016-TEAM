@@ -1,0 +1,74 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Magnetometer\"><param name=\"android-package\" value=\"org.apache.cordova.magnetometer.Magnetometer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ToneGenerator\"><param name=\"android-package\" value=\"org.apache.cordova.tonegenerator.ToneGenerator\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Serial\"><param name=\"android-package\" value=\"fr.drangies.cordova.serial.Serial\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.nasa.zurkon.spacehack2016"
+        },
+        "cordova-plugin-magnetometer": {
+            "PACKAGE_NAME": "org.nasa.zurkon.spacehack2016"
+        },
+        "cordova-plugin-tonegenerator": {
+            "PACKAGE_NAME": "org.nasa.zurkon.spacehack2016"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "org.nasa.zurkon.spacehack2016"
+        },
+        "fr.drangies.cordova.serial": {
+            "PACKAGE_NAME": "org.nasa.zurkon.spacehack2016"
+        }
+    },
+    "dependent_plugins": {}
+}
