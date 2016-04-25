@@ -1,6 +1,7 @@
 
 // Initialise vars _____________________________________________
 
+var tID = Math.ceil(Math.random() * (2 ^ 8));
 var radDOM1 = document.getElementById('radDOM1');
 var radDOM2 = document.getElementById('radDOM2');
 var radDOM3 = document.getElementById('radDOM3');
@@ -20,6 +21,7 @@ var pressureHistory = [];
 var serialPipeline = "";
 var lastSerialUpdate = 0;
 var intervalID = 0;
+var ajaxIntervalID = 0;
 
 // Helper functions __________________________________________
 
@@ -65,15 +67,15 @@ function displayReadings() {
     radDOM1.style.color = getRadiationColor(radiation);
     pressureDOM1.innerText = pressure;
     pressureDOM1.style.color = getPressureColor(pressure);
-    radDOM2.innerText = radiation + Math.floor(Math.random() * 6) - 3;
+    radDOM2.innerText = radiation + Math.floor(Math.random() * 2) - 1;
     radDOM2.style.color = getRadiationColor(radiation);
     pressureDOM2.innerText = pressure + Math.floor(Math.random() * 10) - 5;
     pressureDOM2.style.color = getPressureColor(pressure);
-    radDOM3.innerText = radiation + Math.floor(Math.random() * 6) - 3;
+    radDOM3.innerText = radiation + Math.floor(Math.random() * 2) - 1;
     radDOM3.style.color = getRadiationColor(radiation);
     pressureDOM3.innerText = pressure + Math.floor(Math.random() * 10) - 5;
     pressureDOM3.style.color = getPressureColor(pressure);
-    radDOM4.innerText = radiation + Math.floor(Math.random() * 6) - 3;
+    radDOM4.innerText = radiation + Math.floor(Math.random() * 2) - 1;
     radDOM4.style.color = getRadiationColor(radiation);
     pressureDOM4.innerText = pressure + Math.floor(Math.random() * 10) - 5;
     pressureDOM4.style.color = getPressureColor(pressure);
@@ -107,6 +109,7 @@ function displayReadings() {
         if (window.cordova && cordova.plugins && cordova.plugins.tonegenerator) {
             cordova.plugins.tonegenerator.play(900, 240);
         }
+        beep();
     } else {
         if (window.cordova && cordova.plugins && cordova.plugins.tonegenerator) {
             cordova.plugins.tonegenerator.stop();
@@ -147,8 +150,7 @@ function watchReadings() {
     	watchSerial();
     } else {
         console.log('No serial usb plugin!!');
-        lastPressureReading = lastPressureReading + (Math.random() * 10) - 5;
-        lastTempReading = lastTempReading + (Math.random() * 1) - 0.5;
+        mockReadings(true);
     }
 }
 
@@ -196,15 +198,49 @@ function watchSerial() {
 	}
 }
 
-function mockReadings() {
+function mockReadings(serialOnly) {
     // No sensor available? We are on PC DEV mode, 
     // just use mocked sensor data.
     intervalID = window.setInterval(function() {
-        lastRadiationReading = lastRadiationReading + (Math.random() * 2) - 1;
         lastPressureReading = lastPressureReading + (Math.random() * 10) - 5;
         lastTempReading = lastTempReading + (Math.random() * 1) - 0.5;
-        displayReadings();
+        if (!serialOnly) {
+        	lastRadiationReading = lastRadiationReading + (Math.random() * 2) - 1;
+        	displayReadings();
+	    }
     }, 200);
+}
+
+function poll() {
+	$.ajax({
+		url: 'http://teams.desalasworks.com/sync.php?t=' + tID,
+		dataType: 'json', 
+		success: function(data) {
+			if (data && data.message) {
+				if (data.message.action) {
+					console.log("ALERT!!!");
+				    if (window.cordova && cordova.plugins && cordova.plugins.tonegenerator) {
+				        cordova.plugins.tonegenerator.start(1200, 240);
+				        window.setTimeout(function() {
+				        	cordova.plugins.tonegenerator.stop();
+				        }, 2000);
+				    }
+			        if (navigator.vibrate) {
+			          navigator.vibrate(2000);
+			        }
+				}
+			}
+		}
+	});
+}
+
+function beep(tid) {
+	$.ajax({
+		url: 'http://teams.desalasworks.com/sync.php?t=' + tID,
+		type: 'post',
+		data: {t: tid, message: '{"action": "beep"}'},
+		dataType: 'json'
+	});
 }
 
 function stop() {
@@ -214,6 +250,8 @@ function stop() {
         cordova.plugins.magnetometer.stop();
     if (window.cordova && cordova.plugins && cordova.plugins.tonegenerator) 
         cordova.plugins.tonegenerator.stop();
+    if (serial)
+    	serial.stop();
 }
 
 
@@ -224,5 +262,11 @@ document.addEventListener("resume", watchReadings, false);
 document.addEventListener("deviceready", watchReadings, false)
 
 
+// AJAX Listener
+ajaxIntervalID = window.setInterval(poll, 2000)
+
 // Page DOM Event Listeners
 $(pressureDOM1).click(watchSerial);
+$('#team-2').click(function() {beep(tID);});
+$('#team-3').click(function() {beep(tID);});
+$('#team-4').click(function() {beep(tID);});
