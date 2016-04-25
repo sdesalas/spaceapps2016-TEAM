@@ -29,6 +29,6 @@ Here is a collage of pictures from the event:
 
 And here is a schematic of the prototype:
 
-![Prototype](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/schematic.jpg)
+![Prototype](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/schematic.png)
 
 
