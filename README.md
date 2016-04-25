@@ -21,14 +21,12 @@ Our solution is built around **off-the-shelf consumer technology** that can be p
 
 We believe that astronauts and future space travellers can **benefit from this technology** and would **love to have a chance to bring it to them**.
 
-#### WINNER - Best Use of Data!!
-
-Here is a collage of pictures from the event:
-
-![Collage](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/collage4.jpg)
-
-And here is a schematic of the prototype:
+Here is a schematic of the prototype:
 
 ![Prototype](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/schematic.png)
 
+#### WINNER - Best Use of Data!!
 
+And here is a collage of pictures from the event:
+
+![Collage](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/collage4.jpg)
