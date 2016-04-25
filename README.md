@@ -4,7 +4,7 @@
 
 There are plenty of hazards for the unwary space traveller.
 
-Our team has developed a solution in response to the [NASA SpaceApps](https://2016.spaceappschallenge.org) **Rock-IT Design challenge** that gives a team of space faring travellers the ability to **sense threats in the immediate environment**.
+Our team has developed a solution in response to the [NASA SpaceApps](https://2016.spaceappschallenge.org) **[Rock-IT Design challenge](https://2016.spaceappschallenge.org/challenges/space-station/rock-it-space-fashion-and-design)** that gives a team of space faring travellers the ability to **sense threats in the immediate environment**.
 
 The device our team has come up with is in the form of a **wearable arm-band** that tracks:
 
