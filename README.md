@@ -26,3 +26,9 @@ We believe that astronauts and future space travellers can **benefit from this t
 Here is a collage of pictures from the event:
 
 ![Collage](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/collage4.jpg)
+
+And here is a schematic of the prototype:
+
+![Prototype](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/schematic.jpg)
+
+
