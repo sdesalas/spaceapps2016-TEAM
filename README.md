@@ -19,7 +19,7 @@ The device is named **T.E.A.M.S** for *Technical Environmental Ambient Monitorin
 
 Our solution is built around **off-the-shelf consumer technology** that can be purchased cheaply (Android phones with WiFi connectivity, Arduino Microcontrollers and Sensors) and would need to be hardened and tested for radiation and similar factors that exist in space.
 
-We believe that astronauts and future space travellers can **benefit from this technology** and would **love to have a chance to bring it to them**.
+We believe that astronauts and future space travellers can **[benefit from this technology](https://youtu.be/Q9Jw7SX2KhM)** and would **love to have a chance to bring it to them**.
 
 Here is a schematic of the prototype:
 
