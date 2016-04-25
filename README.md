@@ -11,7 +11,7 @@ The device we have come up with is in the form of a **wearable arm-band** that t
 - Atmospheric pressure drops
 - Gas chemistry changes
 
-It also **broadcasts this information** to other team members wearing the arm-band so everyone can respond to a threat even if only one team member is affected.
+It also **broadcasts this information** to other team members wearing the arm-band so everyone can respond to a threat even if only one team member is affected. The device generates haptic feedback (vibrations) and a high-pitched sound when a member of the team is threatened.
 
 This gives space travellers an **additional level of protection** as their team members can respond to a threat and **coordinate their emergency response**.
 
