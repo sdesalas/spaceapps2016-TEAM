@@ -20,4 +20,4 @@ We believe that astronauts and future space travellers can **benefit from this t
 
 **WINNER - Best Use of Data!!**
 
-[Collage](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/collage4.jpg)
+![Collage](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/collage4.jpg)
