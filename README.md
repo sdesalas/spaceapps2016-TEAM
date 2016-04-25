@@ -1,3 +1,5 @@
+#### WINNER - Best Use of Data!!
+
 **Space is a Hostile Environment.**
 
 There are plenty of hazards for the unwary space traveller.
@@ -17,7 +19,5 @@ This gives space travellers an **additional level of protection** as their team 
 Our solution is built around **off-the-shelf consumer technology** that can be purchased cheaply (Android phones with WiFi connectivity, Arduino Microcontrollers and Sensors) and would need to be hardened and tested for radiation and similar factors that exist in space.
 
 We believe that astronauts and future space travellers can **benefit from this technology** and would **love to have a chance to bring it to them**.
-
-**WINNER - Best Use of Data!!**
 
 ![Collage](https://raw.githubusercontent.com/sdesalas/spaceapps2016-TEAM/master/design/collage4.jpg)
