@@ -5,7 +5,7 @@ There are plenty of hazards for the unwary space traveller.
 
 Our team has developed a solution in response to the [NASA SpaceApps](https://2016.spaceappschallenge.org) **[Rock-IT Design challenge](https://2016.spaceappschallenge.org/challenges/space-station/rock-it-space-fashion-and-design)** that gives a team of space faring travellers the ability to **sense threats in the immediate environment**.
 
-The device our team has come up with is in the form of a **wearable arm-band** that tracks:
+The device we have come up with is in the form of a **wearable arm-band** that tracks:
 
 - Radiation levels
 - Atmospheric pressure drops
@@ -14,6 +14,8 @@ The device our team has come up with is in the form of a **wearable arm-band** t
 It also **broadcasts this information** to other team members wearing the arm-band so everyone can respond to a threat even if only one team member is affected.
 
 This gives space travellers an **additional level of protection** as their team members can respond to a threat and **coordinate their emergency response**.
+
+The device is named **T.E.A.M.S** for *Technical Environmental Ambient Monitoring System*.
 
 Our solution is built around **off-the-shelf consumer technology** that can be purchased cheaply (Android phones with WiFi connectivity, Arduino Microcontrollers and Sensors) and would need to be hardened and tested for radiation and similar factors that exist in space.
 
